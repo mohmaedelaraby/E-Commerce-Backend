@@ -47,7 +47,7 @@ router.post('/login' , async (req,res)=>{
 
          const token = jwt.sign({id:User._id , isAdmin :User.isAdmin}, process.env.JWT_SEC, {
 
-            expiresIn: '365d' // expires in 365 days
+            expiresIn: '10000d' // expires in 365 days
  
        });
 
